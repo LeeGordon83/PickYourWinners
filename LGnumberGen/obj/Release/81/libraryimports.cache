@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <ManifestDocuments>
+    <ManifestDocument>obj\Release\81\lp\10\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\81\lp\11\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\81\lp\5\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\81\lp\6\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\81\lp\7\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\81\lp\8\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\81\lp\9\jl\AndroidManifest.xml</ManifestDocument>
+  </ManifestDocuments>
+  <NativeLibraries />
+  <Jars>
+    <Jar>obj\Release\81\lp\10\jl\classes.jar</Jar>
+    <Jar>obj\Release\81\lp\11\jl\classes.jar</Jar>
+    <Jar>obj\Release\81\lp\4\jl\support-annotations.jar</Jar>
+    <Jar>obj\Release\81\lp\5\jl\classes.jar</Jar>
+    <Jar>obj\Release\81\lp\6\jl\classes.jar</Jar>
+    <Jar>obj\Release\81\lp\7\jl\classes.jar</Jar>
+    <Jar>obj\Release\81\lp\8\jl\classes.jar</Jar>
+    <Jar>obj\Release\81\lp\9\jl\classes.jar</Jar>
+  </Jars>
+</Paths>

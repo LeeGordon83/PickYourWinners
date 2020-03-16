@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1">
+        <Toolbar
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="?android:attr/colorPrimary"
+            android:minWidth="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarSelection">
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativeLayout2">
+                <TextView
+                    android:text="Pick Your Winners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbarSelectionTitle"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+                <ImageButton
+                    android:src="@drawable/ic_home_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHome"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/btnLoadImg"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_centerVertical="true" />
+                <ImageButton
+                    android:src="@drawable/ic_open_in_browser_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnLoadImg"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/btnSettingsImg"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_centerVertical="true" />
+                <ImageButton
+                    android:src="@drawable/ic_settings_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSettingsImg"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </Toolbar>
+      <ImageView
+            android:src="@drawable/mainLogoSmall"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/toolbarSelection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/imageView1" />
+        <Button
+            android:text="Generate Random Number List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/numGen" />
+        <Button
+            android:text="Generate Random Name List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numGen"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/namedNumGen" />
+        <Button
+            android:text="Load Saved List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namedNumGen"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/Load" />
+        <Button
+            android:text="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Load"
+            android:id="@+id/buttonSettingMain" />
+      </RelativeLayout>
+
+</LinearLayout>

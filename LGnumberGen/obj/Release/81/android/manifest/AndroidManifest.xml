@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="pickyourwinners.pickyourwinners" android:installLocation="auto" android:versionName="3.0" android:versionCode="3">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+  <application android:label="Pick Your Winners" android:theme="@android:style/Theme.Material.Light" android:icon="@drawable/ic_launcher" android:name="md52771e5fe321b3f4a1e2651f245997970.MainApplication" android:allowBackup="true">
+    <activity android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md52771e5fe321b3f4a1e2651f245997970.SplashActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:theme="@style/Theme.MyTheme" android:name="md52771e5fe321b3f4a1e2651f245997970.addNameActivity" />
+    <activity android:theme="@style/Theme.MyTheme" android:name="md52771e5fe321b3f4a1e2651f245997970.GeneratedListActivity" />
+    <activity android:theme="@style/Theme.MyTheme" android:name="md52771e5fe321b3f4a1e2651f245997970.loadActivity" />
+    <activity android:theme="@style/Theme.MyTheme" android:name="md52771e5fe321b3f4a1e2651f245997970.MainActivity" />
+    <activity android:theme="@style/Theme.MyTheme" android:name="md52771e5fe321b3f4a1e2651f245997970.namedNumGenActivity" />
+    <activity android:theme="@style/Theme.MyTheme" android:name="md52771e5fe321b3f4a1e2651f245997970.numGenActivity" />
+    <activity android:theme="@style/Theme.MyTheme" android:name="md52771e5fe321b3f4a1e2651f245997970.settingsActivity" />
+    <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="pickyourwinners.pickyourwinners.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
+</manifest>

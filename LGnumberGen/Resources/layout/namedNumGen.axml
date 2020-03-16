@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1">
+        <Toolbar
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="?android:attr/colorPrimary"
+            android:minWidth="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarSelection">
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativeLayout2">
+                <TextView
+                    android:text="Create Named List"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbarSelectionTitle"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+                <ImageButton
+                    android:src="@drawable/ic_home_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHome"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/btnLoadImg"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_centerVertical="true" />
+                <ImageButton
+                    android:src="@drawable/ic_open_in_browser_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnLoadImg"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/btnSettingsImg"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_centerVertical="true" />
+                <ImageButton
+                    android:src="@drawable/ic_settings_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSettingsImg"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </Toolbar>
+        <Button
+            android:text="Add Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarSelection"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerPoint"
+            android:id="@+id/buttonAddName" />
+        <TextView
+            android:id="@+id/centerPoint"
+            android:text=""
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:text="Save List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarSelection"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/centerPoint"
+            android:id="@+id/buttonsaveNamedNumList" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_below="@+id/buttonsaveNamedNumList"
+            android:layout_above="@+id/selectedNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="false"
+            android:id="@+id/NameNumList" />
+        <TextView
+            android:id="@+id/hiddenGuid"
+            android:layout_width="0dip"
+            android:layout_below="@id/NameNumList"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectedNumber"
+            android:textColor="@android:color/holo_purple"
+            android:layout_above="@+id/btnGenerateList"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+        <TextView
+            android:text=" names selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/selectedNumber"
+            android:layout_above="@+id/btnGenerateList"
+            android:id="@+id/selectedText"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+        <Button
+            android:text="Generate Random List"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnGenerateList"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+</LinearLayout>
