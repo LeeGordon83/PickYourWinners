@@ -1,4 +1,4 @@
-# PickYourWinners
+# Pick Your Winners
 Android mobile application for picking random names/numbers
 
 # Download
